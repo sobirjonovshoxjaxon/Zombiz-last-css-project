@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
 let navbar = document.querySelector(".navbar")
 
 window.addEventListener("scroll", ()=>{
-    if(window.pageYOffset>100){
+    if(window.pageYOffset>10){
         navbar.classList.add("fixed")
     }else{
         navbar.classList.remove("fixed")

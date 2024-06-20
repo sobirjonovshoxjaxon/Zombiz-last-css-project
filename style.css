@@ -99,7 +99,7 @@ section#homepage .header{
 
 /* navbar */
 .navbar{
-    z-index: 11;
+    height: 100px;
 }
 
 .fixed{
