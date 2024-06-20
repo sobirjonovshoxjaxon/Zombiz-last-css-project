@@ -295,6 +295,58 @@ section#homepage #register-form{
     background-color: rgb(193, 3, 3);
 }
 
+/* section#whatWeDo */
+
+section#whatWeDo{
+    padding: 80px 0;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section#whatWeDo h3{
+    font: 600 40px sans-serif;
+    text-transform: capitalize;
+}
+
+section#whatWeDo p{
+    font: 500 18px sans-serif;
+    color: grey;
+    width: 85%;
+    margin: 35px auto;
+    line-height: 27px;
+}
+
+section#whatWeDo .what-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+section#whatWeDo .what-cards .what-card{
+    width: 380px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+section#whatWeDo .what-cards .what-card:hover{
+    box-shadow: 0 0 10px rgb(65, 5, 107);
+}
+
+section#whatWeDo .what-cards .what-card h3{
+    font: 700 24px sans-serif;
+    margin-top: 15px;
+}
+
+section#whatWeDo .what-cards .what-card p{
+    width: 80%;
+    margin: 0;
+    margin-top: 30px;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 576px){
     section#homepage .header{
@@ -356,7 +408,14 @@ section#homepage #register-form{
 
     #register-form form{
         width: 300px;
-        
+    }
+
+    section#whatWeDo .what-cards{
+        display: block;
+    }
+
+    section#whatWeDo .what-cards .what-card{
+        margin: 0 auto;
     }
 }
 
@@ -409,6 +468,23 @@ section#homepage #register-form{
     .swiper {
         height: 100vh;
     }
+
+    section#whatWeDo{
+        width: 98%;
+    }
+
+    section#whatWeDo .what-cards{
+        display: block;
+    }
+
+    section#whatWeDo .what-cards .what-card{
+        margin: 0 auto;
+    }
+
+    section#whatWeDo .what-cards .what-card{
+        width: 300px;
+        height: 290px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -455,6 +531,20 @@ section#homepage #register-form{
         display: flex;
         justify-content: space-between;
     }
+
+    section#whatWeDo{
+        width: 98%;
+    }
+
+    section#whatWeDo .what-cards .what-card{
+        width: 300px;
+        height: 300px;
+        padding: 20px 10px;
+    }
+
+    section#whatWeDo .what-cards .what-card p{
+        margin: 0;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width: 1200px){
@@ -491,6 +581,10 @@ section#homepage #register-form{
         width: 43%;
         display: flex;
         justify-content: space-between;
+    }
+
+    section#whatWeDo{
+        width: 90%;
     }
 }
 
