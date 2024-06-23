@@ -44,3 +44,26 @@ document.getElementById("open-form").onclick = function(){
 document.getElementById("square").onclick = function(){
   document.getElementById("register-form").style.display = "none"
 }
+
+// move numbers
+let number = document.querySelectorAll(".number")
+let Interval = 10000
+
+number.forEach((number) =>{
+
+  let start = 0
+  let end = number.getAttribute("data-val")
+  let duration = Interval/end
+
+
+  let result  = setInterval(function(){
+    start += 1
+    number.textContent= start
+
+    if(start == end){
+      clearInterval(result)
+    }
+  },duration)
+
+    
+})

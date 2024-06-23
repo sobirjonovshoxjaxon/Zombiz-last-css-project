@@ -471,6 +471,33 @@ section#ourService .service-gallery{
     color: rgb(65, 5, 107);
 }
 
+/* section#statistics */
+section#statistics{
+    padding: 80px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/home1.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+section#statistics article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#statistics article p{
+    font: 600 20px sans-serif;
+}
+
+article img{
+    margin-right: 25px;
+}
+
+section#statistics article h3{
+    font: 600 40px sans-serif;
+}
 
 
 
