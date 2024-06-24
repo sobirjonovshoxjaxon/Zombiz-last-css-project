@@ -67,3 +67,15 @@ number.forEach((number) =>{
 
     
 })
+
+
+// scroll-button
+let scrollBtn = document.querySelector(".scroll-button")
+
+window.addEventListener('scroll', ()=>{
+  if(window.pageYOffset>150){
+    scrollBtn.classList.add("active")
+  }else{
+    scrollBtn.classList.remove("active")
+  }
+})

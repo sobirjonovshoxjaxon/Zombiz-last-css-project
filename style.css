@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html,body{
+    scroll-behavior: smooth;
+}
+
 section#homepage .header{
     display: flex;
     justify-content: space-between;
@@ -499,6 +503,169 @@ section#statistics article h3{
     font: 600 40px sans-serif;
 }
 
+.scroll-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: rgb(65, 5, 107);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.active{
+    opacity: 1;
+}
+
+
+.scroll-button i{
+    font-size: 25px;
+}
+
+/* section#project */
+section#project{
+    padding: 80px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+section#project h3:nth-child(1){
+    font: 600 31px sans-serif;
+}
+
+section#project p{
+    font: 500 17px sans-serif;
+    margin-top: 20px;
+}
+
+.project-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.single-img{
+    position: relative;
+    display: inline-block;
+    color: black;
+    color: white;
+    overflow: hidden;
+    margin-right: 25px;
+    height: 100%;
+}
+
+.single-img img{
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    height: 100%;
+}
+
+.single-img .text{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(117, 2, 152,0.5),rgb(117, 2, 152,0.5));
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.single-img:hover .text{
+    transform: scale(1);
+}
+
+.single-img:hover img{
+    transform: scale(1.2);
+}
+
+section#project .single-img h3{
+    font: 700 30px sans-serif;
+    margin: 15px 0;
+}
+
+section#project .single-img i{
+    font-size: 25px;
+}
+
+section#project .gallery-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+}
+.gallery-img img{
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.gallery-img .text{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-image: linear-gradient(rgb(117, 2, 152,0.5),rgb(117, 2, 152,0.5));
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.gallery-img:hover .text{
+    transform: scale(1);
+}
+
+.gallery-img:hover img{
+    transform: scale(1.2);
+}
+
+.btn-project{
+    padding: 12px 0px;
+    background-color: rgb(65, 5, 107);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 50px auto 0 auto;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+    transition: 0.5s;
+    border: 2px solid rgb(65, 5, 107);
+
+}
+
+.btn-project:hover{
+    background-color: transparent;
+    border: 2px solid rgb(65, 5, 107);
+    color: rgb(65, 5, 107);
+}
+
 
 
 
@@ -619,6 +786,24 @@ section#statistics article h3{
 
     section#ourService .service-gallery .s-card{
         margin-bottom: 40px;
+    }
+
+    .project-images{
+        display: block;
+    }
+
+    .single-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-images{
+        display: block;
+    }
+
+    .gallery-images img{
+        margin: 20px 0;
     }
 }
 
@@ -742,7 +927,23 @@ section#statistics article h3{
         margin-bottom: 40px;
     }
 
-    /* ourService */
+    .project-images{
+        display: block;
+    }
+
+    .single-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-images{
+        display: block;
+    }
+
+    .gallery-images img{
+        margin: 30px 0;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -815,6 +1016,17 @@ section#statistics article h3{
         gap: 30px;
     }
 
+    .single-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .project-images{
+        display: block;
+    }
+
 }
 
 @media screen and (min-width:992px) and (max-width: 1200px){
@@ -855,6 +1067,17 @@ section#statistics article h3{
 
     section#whatWeDo{
         width: 90%;
+    }
+
+    .gallery-images{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    
+    }
+
+    .project-images{
+        align-items:start;
     }
 }
 
