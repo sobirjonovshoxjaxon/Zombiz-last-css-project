@@ -89,6 +89,7 @@ var swiper = new Swiper(".box", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  loop:true,
   breakpoints: {
     "@0.00": {
       slidesPerView: 1,
@@ -107,4 +108,37 @@ var swiper = new Swiper(".box", {
       spaceBetween: 50,
     },
   },
+});
+
+/* section#aboutClient */
+
+var swiper = new Swiper(".mySwiper3", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop: true,
+});
+
+var swiper = new Swiper(".mySwiper5", {
+
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 5,
+      spaceBetween: 10
+    }
+  },
+  loop:true,
 });

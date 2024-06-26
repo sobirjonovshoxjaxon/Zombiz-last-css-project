@@ -688,19 +688,12 @@ section#ourTeam .title-p{
 }
 
 .box {
-    /* max-width: 1440px; */
     display: flex;
     height: 350px;
     margin: 0 auto;
     overflow: hidden;
     width: 83%;
   }
-  /* .box .banner-swiper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: relative;
-  } */
   .box .swiper-wrapper {
     display: flex;
     flex-direction: row;
@@ -715,6 +708,8 @@ section#ourTeam .title-p{
     justify-content: center;
     align-items: center;
     height: 350px;
+    background-color: white;
+    padding: 0;
   }
 
   .box .slide-image img {   
@@ -722,35 +717,11 @@ section#ourTeam .title-p{
     height: 100%;
     object-fit: cover;
   }
-  .box .navigation {
-    display: block;
-    position: absolute;
-    width: 120px;
-    height: 56px;
-    z-index: 50;
-    bottom: 16px;
-    right: 236px;
-  }
-  .box .navigation .previous {
-    margin-right: 8px;
-  }
-  .box .navigation .previous,
-  .box .navigation .next {
-    width: 56px;
-    height: 56px;
-    background-color: #424142;
-  }
-  .box .navigation .previous i,
-  .box .navigation .next i {
-    color: white;
-    }
 
 .box .slide-image{
     width: 100%;
     display: block;
     height: 100%;
-    position: relative;
-    border: 2px solid red;
 }
 
 .box .slide-image .text{
@@ -789,6 +760,238 @@ section#ourTeam .title-p{
 .box .slide-image:hover a{
     opacity: 1;
 }
+
+/* section#ourPrice */
+
+section#ourPrice{
+    padding: 80px 0;
+    text-align: center;
+}
+
+section#ourPrice .title{
+    font: 600 40px sans-serif;
+}
+
+section#ourPrice .title-p{
+    font: 500 18px sans-serif;
+    width: 67%;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+section#ourPrice .our-cards{
+    display: flex;
+    width: 83%;
+    margin:  70px auto 0 auto;
+    justify-content: space-between;
+}
+
+section#ourPrice .our-cards .card{
+    width: 23%;
+    border-radius: 0;
+    height: 500px;
+    border: none;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+section#ourPrice .our-cards .card:hover{
+    opacity: 1;
+}
+
+.our-cards .card .header{
+    height: 160px;
+    background-color: rgb(55, 0, 95);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-cards .card .header h3{
+    font: 700 28px sans-serif;
+}
+
+.our-cards .card .header h3:nth-child(2){
+    font: 600 35px sans-serif;
+    margin: 10px 0;
+}
+
+.our-cards .card .body{
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.our-cards .card .body .our-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+
+.our-menu li{
+    margin-bottom: 20px;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    font: 500 18px sans-serif;
+}
+
+.our-cards button{
+    padding: 10px 0;
+    width: 150px;
+    font: 500 17px sans-serif;
+    background-color: rgb(55, 0, 95);
+    color: white;
+    border: 2px solid rgb(55, 0, 95);
+}
+
+/* section#aboutClient */
+
+section#aboutClient{
+    padding: 80px 0;
+    background-color: white;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.mySwiper3 {
+  width: 83%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+section#aboutClient h3{
+    font: 700 38px sans-serif;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.mySwiper3 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper3 .swiper-slide .client-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid rgb(21, 0, 255);
+}
+
+.mySwiper3 .swiper-slide .client-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.mySwiper3 .swiper-slide h1{
+    font: 700 70px sans-serif;
+    margin: 30px 0;
+}
+
+.mySwiper3 .swiper-slide p{
+    font: 500 25px sans-serif;
+    color: grey;
+    width: 80%;
+    line-height: 30px;
+}
+
+.mySwiper3 .swiper-slide h3{
+    font-size: 28px;
+    color: rgb(55, 0, 95);
+}
+
+.mySwiper3 .swiper-slide h4{
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+.mySwiper3 .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: 2px solid blue;
+}
+
+
+
+/* section#ourSponsors */
+section#ourSponsors{
+    background-color: rgb(55, 0, 95);
+    color: white;
+    padding: 80px 0;
+}
+
+/* html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+
+.mySwiper5 {
+  width: 83%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.mySwiper5 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.mySwiper5 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  object-fit: cover;
+  
+}
+
+.mySwiper5 .swiper-slide .image{
+    width: 150px;
+}
+
+
 
 
 
@@ -927,6 +1130,22 @@ section#ourTeam .title-p{
 
     .gallery-images img{
         margin: 20px 0;
+    }
+
+    section#ourTeam h3{
+        font: 600 30px sans-serif;
+    }
+    
+    section#ourTeam .title-p{
+        font: 500 17px sans-serif;
+    }
+
+    section#ourPrice .our-cards{
+        display: block;
+    }
+    
+    section#ourPrice .our-cards .card{
+        width: 100%;
     }
 }
 
@@ -1067,6 +1286,22 @@ section#ourTeam .title-p{
     .gallery-images img{
         margin: 30px 0;
     }
+
+    section#ourTeam h3{
+        font: 600 30px sans-serif;
+    }
+    
+    section#ourTeam .title-p{
+        font: 500 17px sans-serif;
+    }
+
+    section#ourPrice .our-cards{
+        display: block;
+    }
+    
+    section#ourPrice .our-cards .card{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -1150,6 +1385,18 @@ section#ourTeam .title-p{
         display: block;
     }
 
+    section#ourPrice .our-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        margin: 50px auto 0 auto;
+
+    }
+    
+    section#ourPrice .our-cards .card{
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width:992px) and (max-width: 1200px){
@@ -1196,11 +1443,22 @@ section#ourTeam .title-p{
         display: flex;
         flex-direction: column;
         width: 50%;
-    
     }
 
     .project-images{
         align-items:start;
+    }
+
+    section#ourPrice .our-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        margin: 50px auto 0 auto;
+
+    }
+    
+    section#ourPrice .our-cards .card{
+        width: 100%;
     }
 }
 
