@@ -4,6 +4,8 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    pagination: false,
+    dots: false,
 
     breakpoints: {
       // when window width is >= 320px
@@ -85,10 +87,6 @@ window.addEventListener('scroll', ()=>{
 var swiper = new Swiper(".box", {
   slidesPerView: 1,
   spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   loop:true,
   breakpoints: {
     "@0.00": {
@@ -113,32 +111,23 @@ var swiper = new Swiper(".box", {
 /* section#aboutClient */
 
 var swiper = new Swiper(".mySwiper3", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   loop: true,
 });
 
-var swiper = new Swiper(".mySwiper5", {
-
-
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 5,
-      spaceBetween: 10
-    }
-  },
+$('.owl-carousel').owlCarousel({
   loop:true,
-});
+  margin: 10,
+  // nav:true,
+  dots: false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+})
